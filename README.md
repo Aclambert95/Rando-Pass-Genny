@@ -61,15 +61,57 @@ function generatePassword() {
     var passLength = prompt("How many characters would you like your password to be?")
 }
 </pre>
-
 ![Alt text](image.png)
 
 #### The next step is to define the minimum and maximum lengths of the password. We can do this with the following "IF" statement:
 <pre>
 if (passLength < 8 || passLength > 128 || isNaN(passLength)) {
-    alert("Invalid entry - Please enter a number between 8 and 128");
+    alert("Ah ah ah - You must enter a number between 8 and 128");
     return
   }
 </pre>
+![Alt text](image-2.png)
 
-![Alt text](image-1.png)
+#### After that we want to request each of the different kinds of characters:
+  <pre>
+  var lowercaseConfirm = confirm("Would you like to include lowercase letters?");
+  if (lowercaseConfirm === true) {
+    for (var i = 0; i < lowercases.length; i++) {
+      inputs.push(lowercases[i]);
+    }
+    console.log(inputs)
+  }
+  </pre>
+  ![Alt text](image-3.png)
+  <pre>
+  var uppercaseConfirm = confirm("Would you like to include uppercase letters?");
+  if (uppercaseConfirm === true) {
+    for (var i = 0; i < uppercases.length; i++) {
+      inputs.push(uppercases[i]);
+    }
+    console.log(inputs)
+  }
+  </pre>
+  ![Alt text](image-4.png)
+  <pre>
+  var numberConfirm = confirm("Would you like to include numbers?");
+  if (numberConfirm === true) {
+    for (var i = 0; i < numbers.length; i++) {
+      inputs.push(numbers[i]);
+    }
+    console.log(inputs)
+  }
+  </pre>
+  ![Alt text](image-5.png)
+  <pre>
+  var specialsConfirm = confirm("Would you like to include special characters?");
+  if (specialsConfirm === true) {
+    for (var i = 0; i < specials.length; i++) {
+      inputs.push(specials[i]);
+    }
+    console.log(inputs)
+  }
+  </pre>
+  ![Alt text](image-6.png)
+
+#### 
