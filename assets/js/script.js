@@ -16,4 +16,10 @@ function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password");
     passwordText.value = password;
-  }
+}
+
+function generatePassword() {
+    //Function to request total length
+    var passLength = prompt("How many characters would you like your password to be?")
+}
+
