@@ -59,4 +59,8 @@ function generatePassword() {
         console.log(inputs)
     }
 
+    if (uppercaseConfirm === false && numberConfirm === false && lowercaseConfirm === false && specialsConfirm === false) {
+        alert("Password requires at least 1 type of character.")
+        return;
+    }
 }

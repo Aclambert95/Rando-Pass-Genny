@@ -114,4 +114,13 @@ if (passLength < 8 || passLength > 128 || isNaN(passLength)) {
   </pre>
   ![Alt text](image-6.png)
 
+#### In the oh so rare case that the user decides they do not like any of the options, we need to prompt them with a message telling them for this generator to work, they will need to select AT LEAST 1 type of character:
+<pre>
+if (uppercaseConfirm === false && numberConfirm === false && lowercaseConfirm === false && specialsConfirm === false) {
+        alert("Password requires at least 1 type of character.")
+        return;
+    }
+</pre>
+![Alt text](image-7.png)
+
 #### 
