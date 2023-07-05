@@ -63,4 +63,16 @@ function generatePassword() {
         alert("Password requires at least 1 type of character.")
         return;
     }
+
+    const confirmLength = parseInt(passLength)
+
+    for (var i = 0; i < confirmLength; i++) {
+        inputs[
+          Math.floor(Math.random() * inputs.length)];
+    
+        randPassword += inputs[
+          Math.floor(Math.random() * inputs.length)];
+      }
+      return randPassword;
 }
+
