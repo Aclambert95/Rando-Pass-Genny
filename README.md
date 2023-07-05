@@ -64,3 +64,12 @@ function generatePassword() {
 
 ![Alt text](image.png)
 
+#### The next step is to define the minimum and maximum lengths of the password. We can do this with the following "IF" statement:
+<pre>
+if (passLength < 8 || passLength > 128 || isNaN(passLength)) {
+    alert("Invalid entry - Please enter a number between 8 and 128");
+    return
+  }
+</pre>
+
+![Alt text](image-1.png)
